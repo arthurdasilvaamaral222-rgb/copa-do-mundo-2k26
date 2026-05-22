@@ -50,6 +50,8 @@ function findStatus(data) {
     data.data?.payment_status ||
     data.data?.pix_status ||
     data.transaction?.status ||
+    data.transaction?.payment_status ||
+    data.transaction?.pix_status ||
     ""
   );
 }

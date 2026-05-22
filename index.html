@@ -2125,9 +2125,9 @@
 
   function normalizePix(data) {
     return {
-      id: pixField(data, ['id','uuid','transaction_id','txid','data.id','data.uuid','data.transaction_id','data.txid']),
-      code: pixField(data, ['qr_code','qrcode','copy_paste','pix_copy_paste','brcode','emv','data.qr_code','data.qrcode','data.copy_paste','data.pix_copy_paste','data.brcode','data.emv']),
-      image: pixField(data, ['qr_code_image','qr_image','qr_image_url','qrcode_image','qrcode_url','data.qr_code_image','data.qr_image','data.qr_image_url','data.qrcode_image','data.qrcode_url'])
+      id: pixField(data, ['id','uuid','transaction_id','txid','data.id','data.uuid','data.transaction_id','data.txid','transaction.id','transaction.uuid','transaction.transaction_id','transaction.txid']),
+      code: pixField(data, ['qr_code','qrcode','copy_paste','pix_copy_paste','pix_copia_cola','brcode','emv','data.qr_code','data.qrcode','data.copy_paste','data.pix_copy_paste','data.pix_copia_cola','data.brcode','data.emv','transaction.qr_code','transaction.qrcode','transaction.copy_paste','transaction.pix_copy_paste','transaction.pix_copia_cola','transaction.brcode','transaction.emv']),
+      image: pixField(data, ['qr_code_image','qr_image','qr_image_url','qrcode_image','qrcode_url','qr_code_base64','data.qr_code_image','data.qr_image','data.qr_image_url','data.qrcode_image','data.qrcode_url','data.qr_code_base64','transaction.qr_code_image','transaction.qr_image','transaction.qr_image_url','transaction.qrcode_image','transaction.qrcode_url','transaction.qr_code_base64'])
     };
   }
 
